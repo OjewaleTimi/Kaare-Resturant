@@ -1,0 +1,24 @@
+@use '../util' as u;
+
+html{
+    // box-sizing:border-box;
+    font-size: 100%;
+    // overflow-x: hidden;
+    width:100vw;
+    // @include u.body-margin
+    background-color: u.$text-whitish;
+}
+*,::before,*::after{
+    box-sizing: inherit;
+
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+

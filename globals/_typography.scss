@@ -1,0 +1,8 @@
+@use '../util' as u;
+
+
+h1,h2,h3{
+    // font-size:clamp(u.rem(20),u.rem(20) + 2vw, u.rem(30));
+    font-weight: 700;
+    font-family: u.$head-text
+}

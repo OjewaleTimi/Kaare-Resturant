@@ -1,0 +1,172 @@
+@use '../util' as u;
+.cater{
+    @include u.body-margin;
+    
+     @include u.breakpoints-max(medium){
+        flex-direction: column;
+        text-align : center;
+         position: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+     }
+     @include u.breakpoints-min(large){
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        
+
+     }
+ 
+    //  @include u.body-margin;  
+                                         
+    &_image{
+      
+        &_small{
+             aspect-ratio:16/9;
+            height:clamp(u.rem(200),100vw - u.rem(200),u.rem(350));
+            max-width: u.rem(510);
+            padding:calc(u.rem(1) + 5vw);
+             @include u.breakpoints-min(medium){
+            display:none
+            }
+        }
+        &_large{
+            
+        border:black solid 1px;
+         width:clamp(u.rem(200),u.rem(100) + 30vw,u.rem(400));
+        position: relative;
+        left:u.rem(0);
+        padding:u.rem(20);
+       @include u.breakpoints-max(medium){
+            display:none
+        }}
+}
+   
+    &_card{
+        // max-width: u.rem(600);
+        height:clamp(u.rem(200),100vw - u.rem(200),u.rem(350));
+        aspect-ratio:2/1;
+        background-color:u.$body-darkish;
+        padding: 0;
+        max-width: u.rem(510);
+       @include u.breakpoints-min(medium){
+
+
+        flex-direction: row;
+        background-color:u.$body-wheat;
+        max-width: none;
+        aspect-ratio: 1/1;
+        height:clamp(u.rem(350),100vw - u.rem(205),u.rem(600));
+        white-space:none;
+        text-align: center;
+        max-width: u.rem(700);
+       }
+        
+       
+        
+        &_head{
+            padding :u.rem(17) 0;
+            color:u.$text-danger;
+            @include u.font-size;
+            font-family: Raleway;
+
+        }
+        &_motto{
+            color:u.$text-light
+        }
+        &_text{
+           font-size: u.$mini-text;
+           padding:u.rem(10) clamp(u.rem(20), u.rem(16) + 2vw ,u.rem(30));
+           color:u.$text-gray;
+        }
+        &_btn{
+            width: max(80% - u.rem(200),u.rem(180));
+            top:u.rem(-10);
+            position:relative;
+
+            font-size:clamp(u.rem(8),u.rem(8) + 2vw,u.rem(20));
+            border-radius: 0;
+            padding:u.rem(8);
+            background-color: u.$body-danger;
+            border-radius: u.rem(10);
+            &:hover{
+                background-color:u.$text-danger;
+                transition: 1s;
+                border-radius: 0;
+            }
+
+            
+            
+        }
+
+    }
+}
+
+// Special Dishes
+
+.special{
+background-color:u.$body-wheat;
+margin-top: calc(u.rem(20) + 10vw);
+height:100vh;
+display:flex;
+flex-direction: row;
+/* Carousel base class */
+&_head{
+
+    padding: u.rem(20);
+    @include u.font-size;
+    color:u.$text-light;
+    &_cover{
+        width:clamp(u.rem(200),u.rem(200) + 30vw,u.rem(1000));
+        background-color: u.$body-danger;
+        padding: u.rem(10);
+         text-align: center;
+         margin-inline: auto;
+         border-radius: u.rem(10);
+         &_top{
+          
+            width:u.rem(1000);
+            position: absolute;
+            top:u.rem(1600);
+            margin-inline: auto;
+            z-index: 2;
+            background-color: u.$text-gray;
+         }
+    }
+    
+}
+.carousel {
+    margin-bottom: 4rem;
+    .carousel-indicators{
+        background-color: red;
+        color:red;
+         bottom:u.rem(-100)
+    }
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 9rem;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 33rem;
+  }
+  .bd-placeholder-img{
+        width:clamp(u.rem(200),100% - u.rem(200), u.rem(500));
+        display:block;
+        margin-inline: auto 10vw;
+
+        @include u.breakpoints-max(medium){
+            height: clamp(u.rem(300),u.rem(200) + 20vw,u.rem(500));
+        }
+       
+  }
+}
+.special-food-image{
+    
+}

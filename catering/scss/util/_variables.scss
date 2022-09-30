@@ -1,0 +1,14 @@
+@use 'functions' as f;
+
+$text-light:white;
+$text-whitish:rgb(246, 246, 246);
+$text-danger:rgb(255, 25, 25);
+$body-darkish:rgb(12, 4, 4);
+$body-black:black;
+$body-wheat:wheat;
+$text-gray:grey;
+$body-danger:rgb(214, 2, 2);
+$margin-left: clamp(f.rem(30), f.rem(16) + 5vw, f.rem(100));
+$mini-text:clamp(f.rem(5),f.rem(4) + 1.2vw,f.rem(20));
+
+// $head-text:;

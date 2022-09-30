@@ -1,0 +1,24 @@
+@use 'functions' as f;
+//700 900 1440
+$breakpoints-up:(
+    'small':f.em(700),
+    'medium':f.em(900),
+    'large':f.em(1440)
+);
+@mixin breakpoints-min($size) {
+    @media (min-width:map-get($breakpoints-up,$size)){
+        @content;
+        
+    }
+}
+//Screen Sizes : 699.98px,899.98px, 1439.98px
+$breakpoints-down: (
+    'small': f.em(699.99),
+    'medium': f.em(899.89),
+    'large': f.em(1439.99)
+);
+@mixin breakpoints-max ($size){
+    @media (max-width:map-get($breakpoints-down,$size)) {
+        @content;
+    }
+}

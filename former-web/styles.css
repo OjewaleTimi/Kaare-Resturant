@@ -1,0 +1,366 @@
+/* font-family: 'Alumni Sans Inline One', cursive;
+font-family: 'Arvo', serif;
+font-family: 'Didact Gothic', sans-serif; */
+
+html{
+    overflow-x: hidden
+}
+
+body{
+    margin: 0 0 0;
+   background-image:url('Screenshot (59).png');
+   background-repeat: repeat;
+   background-size: cover;
+    min-height: 100vh;
+    width:100%;
+    
+}
+.container-fluid{
+   
+    z-index:3;
+}
+.landing-page{
+    background-image:url('lidye-1Shk_PkNkNw-unsplash.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 87vh;
+    margin: 0 0 0; 
+    color:aliceblue;
+    font-weight: 700;
+    
+    
+}
+
+
+.name{
+    font-size: 2.2rem;
+    margin:0 0;
+    position:relative;
+    top:3.5rem;
+    margin-left:15%;
+   color:red;
+   
+}
+.line{
+    height:8vh;
+    width:0.1vh;
+    position: relative;
+    left:34rem;
+    top:-1rem;
+    background-color: red;
+}
+.name.cuisine{
+    font-size: 1.5rem;
+    position: relative;
+    top:-6.6rem;
+    left:8%;
+    color:white;
+}
+.motto{
+    text-align: center;
+    font-size:2rem;
+    font-weight:300;
+    margin: 8% 20% 
+}
+.yoruba{
+    color:red;
+    font-weight: 500;
+}
+.head-motto{
+    position: relative;
+    top:45rem;
+    margin-left:30rem;
+}
+/* Navigation Bar */
+nav{
+    position: absolute;
+    background-color: rgba(219, 219, 219, 0);
+    margin-left: 60%;
+    margin-top:-8.5%;
+     
+     z-index: 10;
+   
+}
+.nav-item{
+   padding:2.3rem 0.5rem 0;
+    
+    
+}
+.nav-link{
+    color:white;
+    font-size:1.5rem;
+
+}
+/* Catering */
+.catering-section{
+  
+    z-index:-1;
+}
+.catering{  
+    width: 100vh;
+    height:100vh;
+    text-align: center;
+    position: relative;
+
+    
+}
+.cater-card{
+    position: relative;
+    background-color: rgb(17, 17, 17);
+    width:50rem;
+    height:57rem;
+    text-align: center;
+    z-index:2;
+    left:20rem;
+    transform:scale(0.8);
+}
+.cater-card-head{
+   
+    color:red;
+    font-size:4.5rem;
+}
+.cater-card .special-sub-motto{
+    font-size: 2.3rem;
+    
+}
+.cater-card-text{
+    color:rgb(190, 190, 190);
+    padding: 0 15% 0;
+    font-size: 1.3rem;
+    
+}
+.catering h2{
+    padding-top:15%;
+    font-size:4rem;
+}
+.catering .special-line{
+   left:46%;
+   margin:3% 0 3%
+}
+.w-90 {
+    margin-top: 20px;
+    background-color: black;
+    border-color: rgb(17, 17, 17) ;
+}
+.w-90:hover{
+    background-color: rgb(34, 34, 34);
+    border-color: rgb(34, 34, 34);
+}
+.cater-image{
+    background-color: rgb(27, 27, 27);
+    height: 20rem;
+    width:20rem;
+    position:relative;
+    top:15%;
+    left:70%;
+    z-index:0;
+    transform: scale(1.2);
+    
+}
+/* From the Chef Recommendations */
+.chef-recommends{
+    background-image: url('paper-background.jpg');
+    height:150vh;
+
+}
+.f-t-c{
+    transform:scaleY(0.9);
+    transform: scale(0.8);
+    
+}
+img .f-t-c{
+    position:relative;
+    top:-20%;
+    margin:0%
+}
+.chef-recommends button{
+    position: relative;
+
+}
+.chef-recommends .cater-card{
+    position: absolute;
+    left:140rem;
+    top: 68rem;
+    z-index: 1;
+    transform: scale(0.7);
+}
+.chef-recommends .w-90{
+    margin-bottom: -10%;
+}
+.carousel-inner{
+    margin-top: 0%;
+}
+/* Special food */
+.article{
+    background-color:black;
+    height:100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+   text-align: center;
+    position: relative;
+}
+.specials{
+    position:relative;
+    /* left:13%; */
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    max-width: 1200px;
+   
+}
+.special-carousel-1{
+    transform: scale(0.95);
+}
+
+.specialfood{
+    content:'';
+    position: relative;
+    width: 80%;
+    margin-top: 7%;
+    
+    background-image: url('Special Food2.png');
+}
+
+.special-3{
+    /* object-fit: none; */
+    object-position: top 15px;;
+}
+.col-4-lg{
+    padding: 5% 5%;
+    margin-top: 5%;
+
+}
+.special-motto{
+    color:red;
+    padding:5% 10% 1%;
+    font-family: Didact Gothic, sans-serif; 
+    font-size: 3rem;
+    text-align: center;
+}
+.special-sub-motto{
+    color:white;
+    padding: 1% 0 2%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.carousel-indicators{
+    position: relative;
+    
+}
+.special-line{
+    height:5px;
+    width:30px;
+    background-color: red;
+    position: relative;
+}
+.chef-recommends .special-line, .article .special-line {
+    
+    left:47.8%;
+    margin: 1%;
+   
+}
+.special-line-top{
+    margin-bottom: 1%;
+}
+.special-line-bottom{
+    margin-top: 1%;
+}
+
+/* Chef Specials */
+.chef-menu{
+    background-image: url('paper-background.jpg');
+    height:300vh;
+   
+
+}
+.chef-specials{
+   
+    margin:0rem 28rem 0rem; 
+  
+}
+.chef-food{
+   transform: scale(0.37);
+}
+.chef-specials img{
+    position: relative;
+    top:-5rem;
+    left:-50rem;
+    
+
+}
+.chef-specials .cater-card{
+   position: relative;
+    top:-100rem;
+    width:80rem;
+    left:30rem;
+    margin-bottom: 20rem;
+    
+}
+.chef-food-container{
+    position: relative;
+    left:-33rem;
+    transform: scale(1.25);
+    top:-30rem;
+}
+.chef-food-container img{
+  position:relative;
+  
+
+}
+.chef-food-container .cater-card {
+    left:-13rem;
+    top: -100rem;
+    z-index:-1;
+}
+.chef-heading{
+    text-align: center;
+    font: 4rem;
+    margin:0
+}
+.move-customer{
+    position:relative;
+    top:70rem;
+    
+}
+.menu-head{
+    position: relative;
+    top:108rem;
+    text-align:center;
+    padding: 2rem;
+    padding-bottom:3rem;
+    font-size: 3.5rem;
+}
+.menu-list{
+   margin-top:5rem
+}
+.menu-food{
+    color:red;
+    padding:1rem
+}
+.menu-food span{
+    color:white
+}
+.menu-2{
+    position:relative;
+    top:-162rem;
+    right:11rem;
+    
+}
+.menu-2 .menu-food{
+    font-size:2.7rem ;
+}
+/* Customer-Favourite */
+.our-fav{
+    top:100rem;
+    background-color:black ;
+    height:70vh;
+    position: relative;
+    top:-2rem;
+}
+.cus-fav{
+    width:50rem;
+}

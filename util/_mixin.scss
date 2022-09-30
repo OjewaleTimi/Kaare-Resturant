@@ -1,0 +1,33 @@
+@use 'functions' as f;
+@use 'breakpoints' as b;
+
+@mixin font-size {
+    font-size: clamp(f.rem(20),f.rem(16) + 2vw,f.rem(30))
+}
+@mixin body-margin{
+    margin:0 clamp(f.rem(30), f.rem(16) + 5vw, f.rem(100)) 0 ;
+    @include b.breakpoints-min(medium){
+    margin-inline:12vw;
+    };
+}
+@mixin bg-image-fitting{
+    width:100%;
+    height:80vh;
+    pointer-events: none;
+    object-fit: cover;
+    z-index:-1;
+    @include flex-center;
+    overflow-x: hidden;
+    margin: 0 
+}
+@mixin flex-center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin image-fitting{
+    position: absolute;
+}
+@mixin margin-left{
+    margin:0 clamp(f.rem(70),f.rem(32) + 50vw,f.rem(200)) 0;
+}
